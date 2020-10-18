@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SpringbootDemo3WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="springboot_demo3_web" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.jt.SpringbootDemo3WebApplication" />
+    <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/springboot_demo3_web" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
