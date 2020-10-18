@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     public boolean checkUser(String param, Integer type) {
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq(, );
-        userMapper.selectCount();///
+        userMapper.selectCount();////
         return false;
     }
 }
