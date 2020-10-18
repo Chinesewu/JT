@@ -1,0 +1,32 @@
+#第一份配置文件,用来指定默认的环境标识
+spring:
+  profiles:
+    active: prod
+
+---
+# YML文件语法
+#  1. key:(空格)  value
+#  2. key与key之间有层级的缩进关系.
+
+#指定环境的名称
+spring:
+  profiles: dev
+server:
+  port: 8090
+
+# 属性赋值操作,编辑属性时注意前缀.  只要springboot启动该数据就会被写入内存中 key-value格式
+redis:
+  host: 192.168.126.129
+  port: 6379
+
+# 1.需要将环境一分为二
+---
+spring:
+  profiles:  prod
+server:
+  port: 8080
+
+# 属性赋值操作,编辑属性时注意前缀.  只要springboot启动该数据就会被写入内存中 key-value格式
+redis:
+  host: 111.111.111.111
+  port: 7000
