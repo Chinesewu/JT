@@ -110,4 +110,10 @@ public class ItemServiceImpl implements ItemService {
 
 		return itemDescMapper.selectById(itemId);
 	}
+
+	@Override
+	public List<Item> getItems() {
+
+		return itemMapper.selectList(null);
+	}
 }
