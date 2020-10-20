@@ -1,11 +1,16 @@
 package com.jt.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
+import com.jt.service.DubboUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/user")
 @Controller
 public class UserController {
+
+    @Reference(timeout = 3000)
+    private DubboUserService userService;
     /**
      *  实现用户模块页面跳转
      *  url:http://www.jt.com/user/login.html
